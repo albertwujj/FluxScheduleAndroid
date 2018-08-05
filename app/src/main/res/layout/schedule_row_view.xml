@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/schedule_list_text_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_alignParentLeft="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/unfocuser"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal"
+            android:layout_width="0px"
+            android:layout_height="0px" />
+      <EditText
+          android:id="@+id/task_start_time"
+          android:layout_width= "0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:layout_marginLeft="8dp"
+          android:layout_marginRight="8dp"
+          android:textSize="18sp"
+
+          android:inputType="time"
+          android:imeOptions="actionDone"
+          android:focusable="false"
+
+          android:maxLines="1"
+          tools:text="Title"
+          />
+        <ToggleButton
+            android:id="@+id/lock_button"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/lock_button"
+        android:layout_margin="8dp"
+        android:textOn=""
+        android:textOff=""
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        />
+
+        <EditText
+          android:id="@+id/task_name"
+          android:layout_width = "0dp"
+          android:layout_height="wrap_content"
+          android:layout_toRightOf="@+id/task_start_time"
+          android:layout_weight="2"
+          android:layout_marginLeft="8dp"
+          android:layout_marginRight="8dp"
+          android:layout_marginTop="2dp"
+          android:ellipsize="end"
+          android:maxLines="1"
+          android:textSize="16sp"
+
+          android:inputType="text"
+          android:imeOptions="actionDone"
+
+          tools:text="Subtitle"
+          />
+      <EditText
+          android:id="@+id/task_duration"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_toRightOf="@+id/task_name"
+          android:layout_weight="1"
+          android:layout_marginLeft="8dp"
+          android:layout_marginRight="8dp"
+          android:layout_marginTop="2dp"
+          android:ellipsize="end"
+          android:maxLines="1"
+          android:textSize="18sp"
+
+
+          android:inputType="time"
+          android:imeOptions = "actionDone"
+          android:focusable="false"
+
+          tools:text="Title"
+          />
+
+    </LinearLayout>
+
+</RelativeLayout>
